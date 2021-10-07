@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url(./imagens/bg2.jpg); /*inserir imagem de fundo*/
+    background-size: cover;
+}
+
+.container { 
+    width: 75vw;
+    height: 1150px;
+    /*background-color: #ffffff66;
+    border: 1px solid #ffffff99;*/
+    margin: 10vh auto; /*centraliza e gera margens no topo e final da página*/
+    border-radius: 7px;
+}
+
+/*estilizando os botões*/
+
+.filter_btn {
+    margin-top: 50px;
+    text-align: center; /*centraliza os botões*/
+    }
+
+.btn {
+    border: none; /*retira borda*/
+    outline: none;
+    padding: 5px 17px;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    background-color: rgb(83, 125, 241); /* inserir cor de fundo no botão (usar "transparent" caso queira sem)*/
+    cursor: pointer; /*insere imagem de uma mãozinha no cursor*/
+    transition: background-color 0.5s ease; /* tempo de transição do fundo branco do botão */
+}
+
+.btn:not(:first-child) { /*seleciona todos os botões, menos o primeiro */
+margin-left: 1px;
+}
+
+.btn:hover {
+background-color:#fff; 
+/*botão se torna branco quando passa o mouse - em conjunto com "transition" no .btn, 
+causando um efeito de animação */
+}
+
+.btn.active { /*toda classe btn.active terá o fundo branco, ou seja, deixará somente o primeiro botão em branco logo que carregar pagina*/
+background-color:#fff;
+}
+
+/* ajustando as imagens - fotos dos carros*/
+
+.filter_imgs {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+.filter_imgs img { /*selecionar as imagens que estão dentro de imgs*/
+    width: 180px;
+    height: 122px;
+    object-fit: cover; /*O conteúdo substituído é dimensionado para manter sua proporção e preencher toda a caixa de conteúdo do elemento*/
+    border: 2px solid #ffffff99;
+    border-radius: 5px;
+    animation: show .5s ease; /* animação  chamada "show" pelo key frame criado no final do programa */
+}
+
+.filter_imgs img:hover { /* ao passar o mouse sobre a imagem gera o efeito de "zoom" */
+    transform: scale(1.2);
+    transition:transform 0.2s ease;
+}
+
+.hide { /* esconder/ocultar */
+    display: none;
+
+}
+
+/* key frame de animação das imagens*/
+@keyframes show {
+    0% {
+        transform: translate(-50%, 100%) scale(0);
+    }
+    100% {
+    transform: translate(0, 0) scale(1);
+
+    }
+
+
+}
