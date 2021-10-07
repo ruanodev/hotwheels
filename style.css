@@ -6,15 +6,16 @@
 
 body {
 
-    background-image: url(./imagens/bg2.jpg); /*inserir imagem de fundo*/
+    /*background-image: url(./imagens/bg2.jpg);*/ /*inserir imagem de fundo*/
+    background-color: #bedfee9a;
     background-size: cover;
 }
 
 .container { 
     width: 75vw;
     height: 1150px;
-    /*background-color: #ffffff66;
-    border: 1px solid #ffffff99;*/
+    background-color: #0c000066;
+    border: 1px solid #ffffff99;
     margin: 10vh auto; /*centraliza e gera margens no topo e final da página*/
     border-radius: 7px;
 }
@@ -33,7 +34,7 @@ body {
     border-radius: 7px;
     border: 1px solid #fff;
     font-size: 20px;
-    background-color: rgb(83, 125, 241); /* inserir cor de fundo no botão (usar "transparent" caso queira sem)*/
+    background-color: rgb(177, 197, 250); /* inserir cor de fundo no botão (usar "transparent" caso queira sem)*/
     cursor: pointer; /*insere imagem de uma mãozinha no cursor*/
     transition: background-color 0.5s ease; /* tempo de transição do fundo branco do botão */
 }
