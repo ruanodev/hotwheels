@@ -16,7 +16,7 @@ btns.forEach(btn => { //"para" cada botão vamos chamar uma função
         if(e.target.classList.contains('btn_japones')){
             filterImage("japones")
         }
-        if(e.target.classList.contains('btn_mascle')){
+        if(e.target.classList.contains('btn_muscle')){
             filterImage("mascle")
         }
         if(e.target.classList.contains('btn_tematicos')){
