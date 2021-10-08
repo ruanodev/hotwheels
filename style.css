@@ -18,21 +18,43 @@ body {
     background-color: #bedfee9a;
     background-size: cover;
 }
+
 .container {
-    width: 75vw;
-    height: 1150px;
+    width: 70vw;
+    height: auto; /*1150px*/
     background-color: #0c000066;
     border: 1px solid #ffffff99;
     margin: 0vh auto; /*centraliza e gera margens no topo e final da página*/
     border-radius: 7px;
+    padding: 10px;
 }
+
 
 /*estilizando os botões*/
 
 .filter_btn {
-    margin-top: 50px;
-    text-align: center; /*centraliza os botões*/
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+
     }
+    
+    /* aplica estilo ao menu/botões quando em tamanho celular*/
+
+    @media screen and (max-width: 500px) {
+               
+        .btn {
+          width: 90%;
+        }
+      
+        .btn:not(:first-child) {
+          margin-top: 10px;
+          margin-left: 0;
+        }
+      }
+
 
 .btn {
     border: none; /*retira borda*/
@@ -70,6 +92,8 @@ background-color:#fff;
     justify-content:center;
     
 }
+
+/*ajustar quantidade de colunas conforme tamanho da tela*/
 
     @media (max-width: 950px) {
         .filter_imgs {
