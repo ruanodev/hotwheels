@@ -4,19 +4,26 @@
     box-sizing: border-box;
 }
 
+.logo {
+    display: block;
+    block-size: 95px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body {
 
     /*background-image: url(./imagens/bg2.jpg);*/ /*inserir imagem de fundo*/
     background-color: #bedfee9a;
     background-size: cover;
 }
-
-.container { 
+.container {
     width: 75vw;
     height: 1150px;
     background-color: #0c000066;
     border: 1px solid #ffffff99;
-    margin: 10vh auto; /*centraliza e gera margens no topo e final da página*/
+    margin: 0vh auto; /*centraliza e gera margens no topo e final da página*/
     border-radius: 7px;
 }
 
@@ -57,10 +64,29 @@ background-color:#fff;
 
 .filter_imgs {
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 190px);
+    display:grid;
+    grid-template-columns: repeat(4, 170px);
     grid-gap: 15px;
-    justify-content: center;
+    justify-content:center;
+    
+}
+
+    @media (max-width: 950px) {
+        .filter_imgs {
+            grid-template-columns: repeat(3, 170px);
+    }
+}
+    
+    @media (max-width: 700px) {
+        .filter_imgs {
+            grid-template-columns: repeat(2, 170px);
+    }
+}
+
+    @media (max-width: 500px) {
+        .filter_imgs {
+            grid-template-columns: repeat(1, 170px);
+    }
 }
 
 .filter_imgs img { /*selecionar as imagens que estão dentro de imgs*/
@@ -73,7 +99,7 @@ background-color:#fff;
 }
 
 .filter_imgs img:hover { /* ao passar o mouse sobre a imagem gera o efeito de "zoom" */
-    transform: scale(1.2);
+    transform: scale(1.6);
     transition:transform 0.2s ease;
 }
 

@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Israel Ruano">
     <link rel="icon" href="./imagens/icone.png"/>
     <title>Coleção Hot Wheels</title>
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script> <!-- "defer" serve para que o JS seja lido somente depois de todo Html  -->
 </head>
 <body>
+    <div>
+        <img src="./imagens/logo-hot-wheels.png" width="250" height="150" class="logo">
+    </div>
+
     <div class="container">
-    <div class="filter_btn">
-    <button class="btn btn_all active">Todos</button>
-    <button class="btn btn_volkswagen">Volkswagen</button>
-    <button class="btn btn_porsche">Porsche</button>
-    <button class="btn btn_japones">Japônes</button>
-    <button class="btn btn_mascle">Mascle Car</button>
-    <button class="btn btn_tematicos">Temáticos</button>
-    <button class="btn btn_outros">Outros</button>
-</div>
-    <div class="filter_imgs">
+
+        <div class="filter_btn">
+            <button class="btn btn_all active">Todos</button>
+            <button class="btn btn_volkswagen">Volkswagen</button>
+            <button class="btn btn_porsche">Porsche</button>
+            <button class="btn btn_japones">Japônes</button>
+            <button class="btn btn_mascle">Mascle Car</button>
+            <button class="btn btn_tematicos">Temáticos</button>
+            <button class="btn btn_outros">Outros</button>
+        </div>
+    
+      <div class="filter_imgs">
 
         <!-- Volkswagen -->
         <img src="./imagens/Volks/volks1.JPG" data-image="volkswagen" data-all="all">
@@ -29,7 +36,6 @@
         <img src="./imagens/Volks/volks4.JPG" data-image="volkswagen" data-all="all">
         <img src="./imagens/Volks/volks5.JPG" data-image="volkswagen" data-all="all">
         <img src="./imagens/Volks/volks6.JPG" data-image="volkswagen" data-all="all">
-
 
         <!-- Porsche -->
         <img src="./imagens/Porsche/porsche1.JPG" data-image="porsche" data-all="all">
