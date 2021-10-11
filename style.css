@@ -21,8 +21,8 @@ body {
 
 .container {
     width: 70vw;
-    min-height: 510px;
-    height: auto;
+    min-height: 510px; /* mantêm tamanho minimo do container*/
+    height: auto; /* auto ajusta o tamanho do container conforme o conteudo */
     background-color: #0c000066;
     border: 1px solid #ffffff99;
     margin: 0vh auto; /*centraliza e gera margens no topo e final da página*/
@@ -124,7 +124,7 @@ background-color:#fff;
 }
 
 .filter_imgs img:hover { /* ao passar o mouse sobre a imagem gera o efeito de "zoom" */
-    transform: scale(1.6);
+    transform: scale(1.7);
     transition:transform 0.2s ease;
 }
 
